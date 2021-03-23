@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List Manager</title>
+    <script src="app.js" defer></script>
+    <style>
+      .boxes {
+        float: left;
+        margin: 10px;
+      }
+
+      #inputs-box {
+        width: 200px;
+      }
+
+      #task-list-box {
+        width: 500px;
+      }
+
+      .btn-group {
+        display: block;
+        margin-bottom: 5px;
+        width: 100px;
+      }
+
+      .error {
+        color: #ff0000;
+      }
+
+      button {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task List Manager</h1>
+    <div id="wrapper"></div>
+    <div id="inputs-box" class="boxes">
+      <input
+        type="text"
+        name="task"
+        id="taskInput"
+        placeholder="Enter a task"
+      />
+      <button id="addTask">Add Task</button>
+      <p id="invalidTask" class="error"></p>
+    </div>
+    <div id="task-list-box" class="boxes">
+      <!-- put textarea here -->
+      <textarea
+        cols="60"
+        rows="6"
+        name="taskList"
+        id="taskListDisplay"
+      ></textarea>
+      <button id="sortTasks">Sort Tasks</button>
+      <input
+        type="text"
+        name="taskToDelete"
+        id="taskToDeleteInput"
+        size="4"
+      /><button id="deleteTask">Delete Task</button>
+      <p id="invalidTaskNumber" class="error"></p>
+    </div>
+  </body>
+</html>
