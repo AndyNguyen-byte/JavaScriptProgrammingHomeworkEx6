@@ -67,7 +67,7 @@ function updateTaskList() {
           return;
       }
 
-      task.splice(taskToDelete-1,1);
+      tasks.splice(taskToDelete-1,1);
       updateTaskList();
   }
 
