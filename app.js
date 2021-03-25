@@ -25,7 +25,7 @@ function updateTaskList() {
 
       if (!task){
         //good
-            task.push(task);
+            tasks.push(task);
 
             task.value == '';
 
